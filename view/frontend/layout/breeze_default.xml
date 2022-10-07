@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="breeze.js">
+            <arguments>
+                <argument name="bundles" xsi:type="array">
+                    <item name="product" xsi:type="array">
+                        <item name="active" xsi:type="boolean">true</item>
+                        <item name="items" xsi:type="array">
+
+                            <!-- mageworx/module-optionbase -->
+                            <item name="optionBase" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/catalog/product/base
+                            </item>
+
+                            <!-- mageworx/module-optionfeatures -->
+                            <item name="optionFeatures" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/catalog/product/features
+                            </item>
+                            <item name="optionFeaturesIsDefault" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/catalog/product/isDefault
+                            </item>
+                            <item name="optionAdditionalImages" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/swatches/additional
+                            </item>
+
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

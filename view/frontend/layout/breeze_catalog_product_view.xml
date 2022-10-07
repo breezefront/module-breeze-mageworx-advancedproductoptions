@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="mageworx.option.features">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">
+                    Swissup_BreezeMageworxAdvancedproductoptions::catalog/product/options.phtml
+                </argument>
+            </action>
+        </referenceBlock>
+
+        <referenceBlock name="mageworx_optionfeatures_additional_wrapper">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">
+                    Swissup_BreezeMageworxAdvancedproductoptions::additional_wrapper.phtml
+                </argument>
+            </action>
+        </referenceBlock>
+
+        <referenceContainer name="breeze.container">
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="MageWorx_OptionFeatures_option_gallery_dropdown" template="MageWorx_OptionFeatures::option/gallery/dropdown.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="MageWorx_OptionFeatures_option_gallery_radio" template="MageWorx_OptionFeatures::option/gallery/radio.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="MageWorx_OptionFeatures_option_gallery_checkbox" template="MageWorx_OptionFeatures::option/gallery/checkbox.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="MageWorx_OptionFeatures_option_gallery_empty" template="MageWorx_OptionFeatures::option/gallery/empty.html"/>
+        </referenceContainer>
+    </body>
+</page>

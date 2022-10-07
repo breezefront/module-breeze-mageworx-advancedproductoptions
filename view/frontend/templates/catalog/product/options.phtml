@@ -1,0 +1,30 @@
+<?php
+/** @var \MageWorx\OptionFeatures\Block\Features $block */
+?>
+<script type="text/javascript">
+    document.addEventListener('breeze:load', () => {
+        const optionFeatures = $.fn.mageworxOptionFeatures.bind($.fn);
+        const optionFeaturesIsDefault = $.fn.mageworxOptionFeaturesIsDefault.bind($.fn);
+
+        var optionBase = window.mageworxOptionBase;
+
+        if (optionBase) {
+            optionBase.addUpdater(
+                10,
+                optionFeatures(<?= /* @noEscape */ $block->getJsonData();?>)
+            );
+            optionBase.addUpdater(
+                50,
+                optionFeaturesIsDefault(<?= /* @noEscape */ $block->getIsDefaultJsonData();?>)
+            );
+        } else {
+            var updaters = window.mageworxOptionUpdaters;
+            if (!updaters) {
+                updaters = {};
+            }
+            updaters[10] = optionFeatures(<?= /* @noEscape */ $block->getJsonData();?>);
+            updaters[50] = optionFeaturesIsDefault(<?= /* @noEscape */ $block->getIsDefaultJsonData();?>);
+            window.mageworxOptionUpdaters = updaters;
+        }
+    });
+</script>

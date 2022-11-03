@@ -9,6 +9,10 @@
                         <item name="active" xsi:type="boolean">true</item>
                         <item name="items" xsi:type="array">
 
+                            <item name="mageworxDependencies" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/mageworx-dependencies
+                            </item>
+
                             <!-- mageworx/module-optionbase -->
                             <item name="optionBase" xsi:type="string">
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/catalog/product/base
@@ -16,8 +20,9 @@
 
                             <!-- mageworx/module-optionfeatures -->
                             <item name="optionFeatures" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/catalog/product/features
+                                MageWorx_OptionFeatures/js/catalog/product/features
                             </item>
+
                             <item name="optionFeaturesIsDefault" xsi:type="string">
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/catalog/product/isDefault
                             </item>

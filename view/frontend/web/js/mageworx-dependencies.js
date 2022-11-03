@@ -18,19 +18,12 @@
                 $this = this.element,
                 $element = $('.' + $widget.options.tooltipClass),
                 timer,
-                type = parseInt($this.data('option-type'), 10),
-                label = $this.data('option-label'),
-                thumb = $this.data('option-tooltip-thumb'),
-                value = $this.data('option-tooltip-value'),
-                width = $this.data('thumb-width'),
-                height = $this.data('thumb-height'),
-                $image,
-                $title;
+                $text;
 
             if (!$element.length) {
                 $element = $('<div class="' +
                     $widget.options.tooltipClass +
-                    '" style="display: none"><div class="text"></div><div class="corner"></div></div>'
+                    '"><div class="text"></div><div class="corner"></div></div>'
                 );
                 $('body').append($element);
             }
@@ -46,11 +39,14 @@
 
                     $element.css({
                         left: $this.offset().left,
-                        top: $this.offset().top + $this.height() + 10
-                    }).show();
+                        top: $this.offset().top + $this.height() + 10,
+                        display: 'block'
+                    });
                 }, $widget.options.delay);
             }, function () {
-                $element.hide();
+                $element.css({
+                    display: 'none'
+                });
                 clearTimeout(timer);
             });
 

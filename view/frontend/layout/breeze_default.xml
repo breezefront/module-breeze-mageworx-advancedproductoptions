@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <update handle="breeze_default__mageworx_optionswatches" />
+
     <body>
         <referenceBlock name="breeze.js">
             <arguments>
@@ -30,6 +33,9 @@
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/swatches/additional
                             </item>
 
+                            <item name="updateBreezeMap_mageworx_adp" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/update-breeze-map
+                            </item>
                         </item>
                     </item>
                 </argument>

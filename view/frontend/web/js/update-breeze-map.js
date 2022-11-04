@@ -1,34 +1,37 @@
 /* global $ */
+/* global window */
 (function () {
     'use strict';
 
-    function getNoVendor(name) {
-        const nameNoVendor = name.replace('mageworx', '');
+    [
+        'optionSwatches',
+        'optionFeatures',
+        'optionFeaturesIsDefault',
+        'optionAdditionalImages'
+    ].forEach(
+        (component) =>
+            $.breezemap[component] = $.fn[component] && $.fn[component].bind($.fn)
+    );
 
-        return nameNoVendor.charAt(0).toLowerCase() + nameNoVendor.slice(1);
-    }
+    [
+        'dropdown',
+        'radio',
+        'checkbox',
+        'empty'
+    ].forEach(
+        (name) =>
+            $.breezemap[`text!MageWorx_OptionFeatures/template/option/gallery/${name}.html`] =
+                $(`#MageWorx_OptionFeatures_option_gallery_${name}`).html()
+    );
 
-    function _getFromFn(name) {
-
-        return $.fn[name] && $.fn[name].bind($.fn)
-    }
-
-    const mageworxAdpRegistry = {
-        get: function (name) {
-            const nameNoVendor = getNoVendor(name);
-
-            if (!window[name]) {
-                window.name = _getFromFn(name) || _getFromFn(nameNoVendor);
-            }
-        },
-
-        set: function (name, value) {
-            window[name] = value;
-        }
-    }
-
-    $.breezemap.optionSwatches = $.fn.optionSwatches && $.fn.optionSwatches.bind($.fn);
     if (!$.breezemap.uiRegistry) {
-        $.breezemap.uiRegistry = mageworxAdpRegistry;
+        $.breezemap.uiRegistry = {
+            get: function (name) {
+                return window[name]
+            },
+            set: function (name, value) {
+                window[name] = value
+            }
+        };
     }
 })();

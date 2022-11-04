@@ -2,6 +2,12 @@
     'use strict';
 
     /**
+     * We have to register global jQuery.
+     * Becuase of direct access to it in MageWorx_OptionFeatures/js/swatches/additional:323
+     */
+    window.jQuery = cash;
+
+    /**
      * Implement simple tooltip for for swatches
      */
     $.widget('mageworx.qtip', {

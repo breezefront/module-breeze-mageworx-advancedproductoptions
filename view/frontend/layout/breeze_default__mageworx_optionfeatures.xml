@@ -1,11 +1,6 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-
-    <update handle="breeze_default__mageworx_apo" />
-    <update handle="breeze_default__mageworx_optionfeatures" />
-    <update handle="breeze_default__mageworx_optionswatches" />
-
     <body>
         <referenceBlock name="breeze.js">
             <arguments>
@@ -13,14 +8,14 @@
                     <item name="product" xsi:type="array">
                         <item name="active" xsi:type="boolean">true</item>
                         <item name="items" xsi:type="array">
-
-                            <!-- mageworx/module-optionbase -->
-                            <item name="optionBase" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/catalog/product/base
+                            <item name="optionFeatures" xsi:type="string">
+                                MageWorx_OptionFeatures/js/catalog/product/features
                             </item>
-
-                            <item name="updateBreezeMap_mageworx_adp" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/update-breeze-map
+                            <item name="optionFeaturesIsDefault" xsi:type="string">
+                                MageWorx_OptionFeatures/js/catalog/product/isDefault
+                            </item>
+                            <item name="optionAdditionalImages" xsi:type="string">
+                                MageWorx_OptionFeatures/js/swatches/additional
                             </item>
                         </item>
                     </item>

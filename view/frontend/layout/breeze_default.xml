@@ -3,26 +3,8 @@
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 
     <update handle="breeze_default__mageworx_apo" />
+    <update handle="breeze_default__mageworx_optionbase" />
     <update handle="breeze_default__mageworx_optionfeatures" />
     <update handle="breeze_default__mageworx_optionswatches" />
 
-    <body>
-        <referenceBlock name="breeze.js">
-            <arguments>
-                <argument name="bundles" xsi:type="array">
-                    <item name="product" xsi:type="array">
-                        <item name="active" xsi:type="boolean">true</item>
-                        <item name="items" xsi:type="array">
-
-                            <!-- mageworx/module-optionbase -->
-                            <item name="optionBase" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/catalog/product/base
-                            </item>
-
-                        </item>
-                    </item>
-                </argument>
-            </arguments>
-        </referenceBlock>
-    </body>
 </page>

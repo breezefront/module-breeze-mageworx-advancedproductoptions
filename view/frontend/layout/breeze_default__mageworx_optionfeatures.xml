@@ -8,14 +8,26 @@
                     <item name="product" xsi:type="array">
                         <item name="active" xsi:type="boolean">true</item>
                         <item name="items" xsi:type="array">
+
                             <item name="optionFeatures" xsi:type="string">
                                 MageWorx_OptionFeatures/js/catalog/product/features
                             </item>
+                            <item name="optionFeatures_register" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/register/features
+                            </item>
+
                             <item name="optionFeaturesIsDefault" xsi:type="string">
                                 MageWorx_OptionFeatures/js/catalog/product/isDefault
                             </item>
+                            <item name="optionFeaturesIsDefault_register" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/register/isDefault
+                            </item>
+
                             <item name="optionAdditionalImages" xsi:type="string">
                                 MageWorx_OptionFeatures/js/swatches/additional
+                            </item>
+                            <item name="optionAdditionalImages_register" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/register/additional
                             </item>
                         </item>
                     </item>

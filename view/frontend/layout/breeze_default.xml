@@ -19,9 +19,6 @@
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/catalog/product/base
                             </item>
 
-                            <item name="updateBreezeMap_mageworx_adp" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/update-breeze-map
-                            </item>
                         </item>
                     </item>
                 </argument>

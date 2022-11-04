@@ -19,10 +19,10 @@
         </referenceBlock>
 
         <referenceContainer name="breeze.container">
-            <block class="Swissup\Breeze\Block\HtmlTemplate" name="MageWorx_OptionFeatures_option_gallery_dropdown" template="MageWorx_OptionFeatures::option/gallery/dropdown.html"/>
-            <block class="Swissup\Breeze\Block\HtmlTemplate" name="MageWorx_OptionFeatures_option_gallery_radio" template="MageWorx_OptionFeatures::option/gallery/radio.html"/>
-            <block class="Swissup\Breeze\Block\HtmlTemplate" name="MageWorx_OptionFeatures_option_gallery_checkbox" template="MageWorx_OptionFeatures::option/gallery/checkbox.html"/>
-            <block class="Swissup\Breeze\Block\HtmlTemplate" name="MageWorx_OptionFeatures_option_gallery_empty" template="MageWorx_OptionFeatures::option/gallery/empty.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_dropdown_html" template="MageWorx_OptionFeatures::option/gallery/dropdown.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_radio_html" template="MageWorx_OptionFeatures::option/gallery/radio.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_checkbox_html" template="MageWorx_OptionFeatures::option/gallery/checkbox.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_empty_html" template="MageWorx_OptionFeatures::option/gallery/empty.html"/>
         </referenceContainer>
     </body>
 </page>

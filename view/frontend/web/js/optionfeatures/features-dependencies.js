@@ -1,22 +1,15 @@
 /* global $ */
-/* global window */
-(() => {
+(function () {
     'use strict';
-
-    /**
-     * We have to register global jQuery.
-     * Becuase of direct access to it in MageWorx_OptionFeatures/js/swatches/additional:323
-     */
-    window.jQuery = cash;
 
     /**
      * Implement simple tooltip for for swatches
      */
     $.widget('mageworx.qtip', {
         options: {
-                delay: 200,                             //how much ms before tooltip to show
-                tooltipClass: 'swatch-option-tooltip'  //configurable, but remember about css
-            },
+            delay: 200,                             //how much ms before tooltip to show
+            tooltipClass: 'swatch-option-tooltip'  //configurable, but remember about css
+        },
 
         /**
          * {@inheritdoc}
@@ -73,22 +66,4 @@
             this._super();
         }
     });
-
-    if (!$.fn.mage) {
-        /**
-         * Copied form original Magento code
-         * magento/magento2-base/lib/web/mage/mage.js
-         */
-        $.fn.mage = function (component, config) {
-            config = config || {};
-
-            this.each(function (index, el) {
-                const $el = $(el);
-
-                $el[component].bind($el, config)
-            });
-
-            return this;
-        };
-    }
 })();

@@ -19,4 +19,10 @@
             return this;
         };
     }
+    
+    if (!$.inArray) {
+        $.inArray = function( elem, arr, i ) {
+            return arr == null ? -1 : Array.prototype.indexOf.call( arr, elem, i );
+        };
+    }
 })();

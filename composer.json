@@ -2,10 +2,10 @@
     "name": "swissup/module-breeze-mageworx-advancedproductoptions",
     "description": "Mageworx Advanced Product Options integration with Breeze Frontend",
     "type": "magento2-module",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "license": "OSL-3.0",
     "require": {
-        "swissup/module-breeze": "^2.0.1"
+        "swissup/module-breeze": "^2.5.5"
     },
     "autoload": {
         "files": [

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="breeze.js">
+            <arguments>
+                <argument name="bundles" xsi:type="array">
+                    <item name="product" xsi:type="array">
+                        <item name="active" xsi:type="boolean">true</item>
+                        <item name="items" xsi:type="array">
+
+                            <item name="optionDependency" xsi:type="string">
+                                MageWorx_OptionDependency/js/dependency
+                            </item>
+                            <item name="optionDependency_register" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/optiondependency/dependency-register
+                            </item>
+
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

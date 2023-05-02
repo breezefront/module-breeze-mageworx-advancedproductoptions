@@ -3,6 +3,7 @@
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 
     <update handle="breeze_default__mageworx_optionbase" />
+    <update handle="breeze_default__mageworx_optiondependency" />
     <update handle="breeze_default__mageworx_optionfeatures" />
     <update handle="breeze_default__mageworx_optionswatches" />
 

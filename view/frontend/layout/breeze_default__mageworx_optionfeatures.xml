@@ -26,6 +26,16 @@
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/isDefault-register
                             </item>
 
+                            <item name="mwImageReplacer_dependencies" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-dependencies
+                            </item>
+                            <item name="mwImageReplacer" xsi:type="string">
+                                MageWorx_OptionFeatures/js/swatches/imageReplacer
+                            </item>
+                            <item name="mwImageReplacer_register" xsi:type="string">
+                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-register
+                            </item>
+
                             <item name="optionAdditionalImages_dependencies" xsi:type="string">
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/additional-dependencies
                             </item>
@@ -35,7 +45,6 @@
                             <item name="optionAdditionalImages_register" xsi:type="string">
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/additional-register
                             </item>
-
                         </item>
                     </item>
                 </argument>

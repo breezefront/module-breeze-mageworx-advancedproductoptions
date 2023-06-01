@@ -5,7 +5,8 @@ define([
     'use strict';
 
     const key = _.findKey($.breezemap, (item) => {
-            return typeof item.addCandidate === 'function'
+            return item
+                && typeof item.addCandidate === 'function'
                 && typeof item.removeCandidate === 'function';
         });
 

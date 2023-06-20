@@ -6,7 +6,6 @@
             <arguments>
                 <argument name="bundles" xsi:type="array">
                     <item name="product" xsi:type="array">
-                        <item name="active" xsi:type="boolean">true</item>
                         <item name="items" xsi:type="array">
 
                             <item name="optionSwatches_dependencies" xsi:type="string">

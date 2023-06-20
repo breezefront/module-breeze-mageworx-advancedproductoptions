@@ -26,6 +26,31 @@ This extension does its best to integrate all storefront features of Advanced Pr
                      } else {
 ```
 
+`mageworx/module-optionfeatures/view/frontend/web/js/swatches/additional.js`
+
+```diff
+@@ -320,7 +320,7 @@
+                     images = $.extend(true, {}, params.options[optionId]['values'][valueId]['images']);
+                 }
+
+-                if (typeof params.$element == 'undefined') {
++                if (typeof params.$element == 'undefined' || !params.$element instanceof jQuery) {
+                     return;
+                 }
+
+@@ -440,7 +440,9 @@
+             clearImagesContainer: function () {
+                 var params = this.options;
+                 var $imagesContainer = this.getOptionGalleryContainer();
+-                $imagesContainer.html('');
++                if (!_.isUndefined($imagesContainer) && $imagesContainer instanceof jQuery) {
++                    $imagesContainer.html('');
++                }
+             },
+
+             /**
+```
+
 ## Installation
 
 ```bash

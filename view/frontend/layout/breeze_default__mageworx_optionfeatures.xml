@@ -36,9 +36,6 @@
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-register
                             </item>
 
-                            <item name="optionAdditionalImages_dependencies" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/additional-dependencies
-                            </item>
                             <item name="optionAdditionalImages" xsi:type="string">
                                 MageWorx_OptionFeatures/js/swatches/additional
                             </item>

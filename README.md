@@ -33,8 +33,8 @@ This extension does its best to integrate all storefront features of Advanced Pr
                      images = $.extend(true, {}, params.options[optionId]['values'][valueId]['images']);
                  }
 
--                if (typeof params.$element == 'undefined') {
-+                if (typeof params.$element == 'undefined' || !params.$element instanceof jQuery) {
+-                if (typeof params.$element == 'undefined' || !params.$element instanceof jQuery) {
++                if (typeof params.$element == 'undefined') {
                      return;
                  }
 
@@ -42,10 +42,10 @@ This extension does its best to integrate all storefront features of Advanced Pr
              clearImagesContainer: function () {
                  var params = this.options;
                  var $imagesContainer = this.getOptionGalleryContainer();
--                $imagesContainer.html('');
-+                if (!_.isUndefined($imagesContainer) && $imagesContainer instanceof jQuery) {
-+                    $imagesContainer.html('');
-+                }
+-                if (!_.isUndefined($imagesContainer) && $imagesContainer instanceof jQuery) {
+-                    $imagesContainer.html('');
+-                }
++                $imagesContainer.html('');
              },
 
              /**

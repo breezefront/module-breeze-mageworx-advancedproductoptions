@@ -6,6 +6,29 @@ This extension does its best to integrate all storefront features of Advanced Pr
 
 ## Required patches
 
+`mageworx/module-optionbase/view/base/web/js/catalog/product/base.js`
+
+```diff
+@@ -50,7 +50,7 @@
+         _init: function initPriceBundle() {
+             var self = this;
+             $(document).ready(function () {
+-                $('#product-addtocart-button').attr('disabled', true);
++                $('#product-addtocart-button').prop('disabled', true);
+                 // Get existing updaters from registry
+                 var updaters = registry.get('mageworxOptionUpdaters');
+                 if (!updaters) {
+@@ -83,7 +83,7 @@
+                 });
+
+                 self.processApplyChanges();
+-                $('#product-addtocart-button').attr('disabled', false);
++                $('#product-addtocart-button').prop('disabled', false);
+             });
+         },
+
+```
+
 `mageworx/module-optiondependency/view/base/web/js/dependency.js`
 
 ```diff

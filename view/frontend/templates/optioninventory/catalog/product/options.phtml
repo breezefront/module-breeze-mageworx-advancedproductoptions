@@ -1,0 +1,4 @@
+<?php
+    $blockTemplateFile = $block->getTemplateFile('MageWorx_OptionInventory::catalog/product/options.phtml');
+?>
+<?= str_replace('<script', '<script data-breeze', $block->fetchView($blockTemplateFile)) ?>

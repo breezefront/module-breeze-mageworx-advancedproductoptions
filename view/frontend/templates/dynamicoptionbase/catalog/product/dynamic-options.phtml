@@ -1,0 +1,4 @@
+<?php
+    $blockTemplateFile = $block->getTemplateFile('MageWorx_DynamicOptionsBase::catalog/product/dynamic-options.phtml');
+?>
+<?= str_replace('<script', '<script data-breeze', $block->fetchView($blockTemplateFile)) ?>

@@ -18,21 +18,22 @@ This extension does its best to integrate all storefront features of Advanced Pr
                  // Get existing updaters from registry
                  var updaters = registry.get('mageworxOptionUpdaters');
                  if (!updaters) {
-@@ -83,7 +83,7 @@
-                 });
-
-                 self.processApplyChanges();
--                $('#product-addtocart-button').attr('disabled', false);
-+                $('#product-addtocart-button').prop('disabled', false);
-             });
+@@ -240,7 +240,7 @@
+             }
+ 
+             this._updateSelectOptions(options.filter('select'), optionConfig, priceSymbol);
+-            this._updateInputOptions(options.filter('input[type!="hidden"]'), optionConfig, priceSymbol);
++            this._updateInputOptions(options.filter('input:not([type="hidden"])'), optionConfig, priceSymbol);
          },
+ 
+         /**
 
 ```
 
 `mageworx/module-optiondependency/view/base/web/js/dependency.js`
 
 ```diff
-@@ -118,12 +118,12 @@
+@@ -116,12 +116,12 @@
              if ($.inArray(optionObject.type, ['drop_down', 'multiple']) !== -1) {
                  if (optionObject.type === 'drop_down') {
                      // For dropdown - for selected select options only
@@ -47,31 +48,44 @@ This extension does its best to integrate all storefront features of Advanced Pr
                      if (selectedMultiselectValues.length > 0) {
                          self.toggleMultiselect(optionObject, selectedMultiselectValues);
                      } else {
+
 ```
 
 `mageworx/module-optionfeatures/view/frontend/web/js/swatches/additional.js`
 
 ```diff
-@@ -320,7 +320,7 @@
+@@ -331,7 +331,7 @@
                      images = $.extend(true, {}, params.options[optionId]['values'][valueId]['images']);
                  }
-
+ 
 -                if (typeof params.$element == 'undefined' || !params.$element instanceof jQuery) {
 +                if (typeof params.$element == 'undefined') {
                      return;
                  }
-
-@@ -440,7 +440,9 @@
+ 
+@@ -451,7 +451,7 @@
              clearImagesContainer: function () {
                  var params = this.options;
                  var $imagesContainer = this.getOptionGalleryContainer();
 -                if (!_.isUndefined($imagesContainer) && $imagesContainer instanceof jQuery) {
--                    $imagesContainer.html('');
--                }
-+                $imagesContainer.html('');
++                if (!_.isUndefined($imagesContainer)) {
+                     $imagesContainer.html('');
+                 }
              },
+```
 
-             /**
+`mageworx/module-optionadvancedpricing/view/base/web/js/advanced-pricing.js`
+
+```diff
+@@ -25,7 +25,7 @@
+                 config = base.options,
+                 options = $(config.optionsSelector, form);
+ 
+-            options.filter('input[type!="hidden"]').each(function (index, element) {
++            options.filter('input:not([type="hidden"]').each(function (index, element) {
+                 var $element = $(element),
+                     optionId = utils.findOptionId($element),
+                     values = $element.val();
 ```
 
 ## Installation

@@ -7,7 +7,7 @@
                 <argument name="bundles" xsi:type="array">
                     <item name="product" xsi:type="array">
                         <item name="items" xsi:type="array">
-                            <item name="optionFeatures" xsi:type="string">
+                            <item name="optionFeatures" xsi:type="array">
                                 <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/catalog/product/features</item>
                                 <item name="import" xsi:type="array">
                                     <item name="dependencies" xsi:type="string">
@@ -16,7 +16,7 @@
                                 </item>
                             </item>
                             <item name="optionFeaturesIsDefault" xsi:type="string">MageWorx_OptionFeatures/js/catalog/product/isDefault</item>
-                            <item name="mwImageReplacer" xsi:type="string">
+                            <item name="mwImageReplacer" xsi:type="array">
                                 <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/swatches/imageReplacer</item>
                                 <item name="import" xsi:type="array">
                                     <item name="dependencies" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-dependencies</item>

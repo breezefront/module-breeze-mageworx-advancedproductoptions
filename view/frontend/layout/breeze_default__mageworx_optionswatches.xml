@@ -7,17 +7,12 @@
                 <argument name="bundles" xsi:type="array">
                     <item name="product" xsi:type="array">
                         <item name="items" xsi:type="array">
-
                             <item name="optionSwatches_dependencies" xsi:type="string">
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/optionswatches/swatches-dependencies
                             </item>
                             <item name="optionSwatches" xsi:type="string">
                                 MageWorx_OptionSwatches/js/swatches
                             </item>
-                            <item name="optionSwatches_register" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionswatches/swatches-register
-                            </item>
-
                         </item>
                     </item>
                 </argument>

@@ -7,11 +7,8 @@
                 <argument name="bundles" xsi:type="array">
                     <item name="product" xsi:type="array">
                         <item name="items" xsi:type="array">
-                            <item name="optionAdvancedpricing_component" xsi:type="string">
+                            <item name="optionAdvancedPricing" xsi:type="string">
                                 MageWorx_OptionAdvancedPricing/js/advanced-pricing
-                            </item>
-                            <item name="optionAdvancedpricing_register" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionadvancedpricing/advancedpricing-register
                             </item>
                         </item>
                     </item>

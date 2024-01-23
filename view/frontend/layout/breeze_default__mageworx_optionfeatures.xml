@@ -7,29 +7,20 @@
                 <argument name="bundles" xsi:type="array">
                     <item name="product" xsi:type="array">
                         <item name="items" xsi:type="array">
-
-                            <item name="optionFeatures_dependencies" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/features-dependencies
-                            </item>
                             <item name="optionFeatures" xsi:type="string">
-                                MageWorx_OptionFeatures/js/catalog/product/features
+                                <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/catalog/product/features</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="dependencies" xsi:type="string">
+                                        Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/features-dependencies
+                                    </item>
+                                </item>
                             </item>
-                            <item name="optionFeatures_register" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/features-register
-                            </item>
-
-                            <item name="optionFeaturesIsDefault" xsi:type="string">
-                                MageWorx_OptionFeatures/js/catalog/product/isDefault
-                            </item>
-                            <item name="optionFeaturesIsDefault_register" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/isDefault-register
-                            </item>
-
-                            <item name="mwImageReplacer_dependencies" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-dependencies
-                            </item>
+                            <item name="optionFeaturesIsDefault" xsi:type="string">MageWorx_OptionFeatures/js/catalog/product/isDefault</item>
                             <item name="mwImageReplacer" xsi:type="string">
-                                MageWorx_OptionFeatures/js/swatches/imageReplacer
+                                <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/swatches/imageReplacer</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="dependencies" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-dependencies</item>
+                                </item>
                             </item>
                             <item name="mwImageReplacer_register" xsi:type="string">
                                 Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-register
@@ -37,9 +28,6 @@
 
                             <item name="optionAdditionalImages" xsi:type="string">
                                 MageWorx_OptionFeatures/js/swatches/additional
-                            </item>
-                            <item name="optionAdditionalImages_register" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/additional-register
                             </item>
                         </item>
                     </item>

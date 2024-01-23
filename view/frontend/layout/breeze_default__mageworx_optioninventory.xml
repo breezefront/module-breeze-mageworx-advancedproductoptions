@@ -10,9 +10,6 @@
                             <item name="optionInventory_component" xsi:type="string">
                                 MageWorx_OptionInventory/js/catalog/product/inventory
                             </item>
-                            <item name="optionInventory_register" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optioninventory/inventory-register
-                            </item>
                         </item>
                     </item>
                 </argument>

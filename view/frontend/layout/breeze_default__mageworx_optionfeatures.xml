@@ -15,19 +15,22 @@
                                     </item>
                                 </item>
                             </item>
-                            <item name="optionFeaturesIsDefault" xsi:type="string">MageWorx_OptionFeatures/js/catalog/product/isDefault</item>
-                            <item name="mwImageReplacer" xsi:type="array">
-                                <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/swatches/imageReplacer</item>
+                            <item name="optionFeaturesIsDefault" xsi:type="string">
+                                MageWorx_OptionFeatures/js/catalog/product/isDefault
+                            </item>
+                            <item name="optionAdditionalImages" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/swatches/additional</item>
                                 <item name="import" xsi:type="array">
-                                    <item name="dependencies" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-dependencies</item>
+                                    <item name="mwImageReplacerDeps" xsi:type="string">
+                                        Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-dependencies
+                                    </item>
+                                    <item name="mwImageReplacer" xsi:type="string">
+                                        MageWorx_OptionFeatures/js/swatches/imageReplacer
+                                    </item>
+                                    <item name="mwImageReplacerRegister" xsi:type="string">
+                                        Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-register
+                                    </item>
                                 </item>
-                            </item>
-                            <item name="mwImageReplacer_register" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-register
-                            </item>
-
-                            <item name="optionAdditionalImages" xsi:type="string">
-                                MageWorx_OptionFeatures/js/swatches/additional
                             </item>
                         </item>
                     </item>

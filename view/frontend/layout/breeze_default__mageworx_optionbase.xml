@@ -7,9 +7,6 @@
                 <argument name="bundles" xsi:type="array">
                     <item name="product" xsi:type="array">
                         <item name="items" xsi:type="array">
-                            <item name="uiRegistry" xsi:type="string">
-                                Swissup_BreezeMageworxAdvancedproductoptions/js/optionbase/base-dependencies
-                            </item>
                             <item name="optionBase" xsi:type="array">
                                 <item name="path" xsi:type="string">MageWorx_OptionBase/js/catalog/product/base</item>
                             </item>

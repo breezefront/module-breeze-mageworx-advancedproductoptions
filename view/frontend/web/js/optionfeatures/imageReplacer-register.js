@@ -1,7 +1,5 @@
-define([
-    'jquery'
-], function ($) {
+define(['uiComponent'], function (Component) {
     'use strict';
 
-    $.breezemap.mwImageReplacer = $.breezemap.__lastComponent();
+    Component.registerLastAnonymous('mwImageReplacer');
 });

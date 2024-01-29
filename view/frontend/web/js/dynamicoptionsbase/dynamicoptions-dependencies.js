@@ -1,5 +1,5 @@
-define([], function () {
+define(['uiComponent'], function (Component) {
     'use strict';
 
-    $.breezemap.dynamicOptionsDefaultCalculator = $.breezemap.__lastComponent();
+    Component.registerLastAnonymous('dynamicOptionsDefaultCalculator');
 });

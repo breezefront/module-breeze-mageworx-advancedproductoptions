@@ -1,5 +1,5 @@
 define(['uiComponent'], function (Component) {
     'use strict';
 
-    Component.registerLastAnonymous('mwImageReplacer');
+    Component.register('mwImageReplacer');
 });

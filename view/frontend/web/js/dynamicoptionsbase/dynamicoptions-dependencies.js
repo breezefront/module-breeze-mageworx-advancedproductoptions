@@ -1,5 +1,5 @@
 define(['uiComponent'], function (Component) {
     'use strict';
 
-    Component.registerLastAnonymous('dynamicOptionsDefaultCalculator');
+    Component.register('dynamicOptionsDefaultCalculator');
 });

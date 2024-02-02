@@ -23,7 +23,7 @@ This extension does its best to integrate all storefront features of Advanced Pr
  
              this._updateSelectOptions(options.filter('select'), optionConfig, priceSymbol);
 -            this._updateInputOptions(options.filter('input[type!="hidden"]'), optionConfig, priceSymbol);
-+            this._updateInputOptions(options.filter('input:not([type="hidden"])'), optionConfig, priceSymbol);
++            this._updateInputOptions(options.filter($.breeze ? 'input:not([type="hidden"])' : 'input[type!="hidden"]'), optionConfig, priceSymbol);
          },
  
          /**
@@ -82,7 +82,7 @@ This extension does its best to integrate all storefront features of Advanced Pr
                  options = $(config.optionsSelector, form);
  
 -            options.filter('input[type!="hidden"]').each(function (index, element) {
-+            options.filter('input:not([type="hidden"]').each(function (index, element) {
++            options.filter($.breeze ? 'input:not([type="hidden"])' : 'input[type!="hidden"]').each(function (index, element) {
                  var $element = $(element),
                      optionId = utils.findOptionId($element),
                      values = $element.val();

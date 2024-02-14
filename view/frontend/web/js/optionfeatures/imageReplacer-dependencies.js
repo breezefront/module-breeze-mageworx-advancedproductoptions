@@ -6,18 +6,16 @@
         // https://stackoverflow.com/a/68851118
         $.Deferred = () => {
             function Defer() {
-                const self = this;
+                var promise = new Promise((resolve, reject) => {
+                    this.resolve = resolve;
+                    this.reject = reject;
+                });
 
-                self.promise = () => {
-                    return new Promise((resolve, reject) => {
-                        self.resolve = resolve;
-                        self.reject = reject;
-                    });
-                };
+                this.promise = () => promise;
             }
 
             return new Defer();
-        }
+        };
     }
 
     if (!$.when) {

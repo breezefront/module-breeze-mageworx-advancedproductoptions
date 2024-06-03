@@ -30,6 +30,21 @@ This extension does its best to integrate all storefront features of Advanced Pr
 
 ```
 
+`mageworx/module-optionfeatures/view/base/web/js/catalog/product/features.js`
+
+```diff
+@@ -840,7 +840,7 @@
+                         }
+                     });
+                 } else {
+-                    var $image = $('<img>', {
++                    var $image = $('<img>').attr({
+                         src: self.options.question_image,
+                         alt: 'tooltip',
+                         "class": 'option-select-tooltip-' + optionId,
+
+```
+
 `mageworx/module-optiondependency/view/base/web/js/dependency.js`
 
 ```diff

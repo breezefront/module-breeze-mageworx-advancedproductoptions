@@ -45,27 +45,6 @@ This extension does its best to integrate all storefront features of Advanced Pr
 
 ```
 
-`mageworx/module-optiondependency/view/base/web/js/dependency.js`
-
-```diff
-@@ -116,12 +116,12 @@
-             if ($.inArray(optionObject.type, ['drop_down', 'multiple']) !== -1) {
-                 if (optionObject.type === 'drop_down') {
-                     // For dropdown - for selected select options only
--                    $('#' + option.attr('id') + ' option:selected').each(function () {
-+                    $('#' + option.attr('id') + ' option:checked').each(function () {
-                         self.toggleDropdown(optionObject, self.getOptionObject($(this).attr('data-option_type_id'), 'value'));
-                     });
-                 } else {
-                     // For multiselect - for all select options
--                    var selectedMultiselectValues = $('#' + option.attr('id') + ' option:selected');
-+                    var selectedMultiselectValues = $('#' + option.attr('id') + ' option:checked');
-                     if (selectedMultiselectValues.length > 0) {
-                         self.toggleMultiselect(optionObject, selectedMultiselectValues);
-                     } else {
-
-```
-
 `mageworx/module-optionfeatures/view/frontend/web/js/swatches/additional.js`
 
 ```diff

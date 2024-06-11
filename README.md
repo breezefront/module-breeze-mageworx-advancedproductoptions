@@ -86,5 +86,5 @@ This extension does its best to integrate all storefront features of Advanced Pr
 
 ```bash
 composer require swissup/module-breeze-mageworx-advancedproductoptions
-bin/magento setup:upgrade --safe-mode=1
+bin/magento module:enable Swissup_BreezeMageworxAdvancedproductoptions
 ```

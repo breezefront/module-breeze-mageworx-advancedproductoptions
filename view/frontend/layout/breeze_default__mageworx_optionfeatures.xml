@@ -37,5 +37,12 @@
                 </argument>
             </arguments>
         </referenceBlock>
+
+        <referenceContainer name="breeze.container">
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_dropdown_html" template="MageWorx_OptionFeatures::option/gallery/dropdown.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_radio_html" template="MageWorx_OptionFeatures::option/gallery/radio.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_checkbox_html" template="MageWorx_OptionFeatures::option/gallery/checkbox.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_empty_html" template="MageWorx_OptionFeatures::option/gallery/empty.html"/>
+        </referenceContainer>
     </body>
 </page>

@@ -5,7 +5,6 @@
   "version": "1.4.0",
   "license": "MIT",
   "require": {
-    "aqeltech/core": "^1.0",
     "swissup/breeze-blank": "^2.11",
     "mageworx/module-advancedproductoptions": "^2.36"
   },

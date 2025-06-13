@@ -1,18 +1,20 @@
 {
-    "name": "swissup/module-breeze-mageworx-advancedproductoptions",
-    "description": "Mageworx Advanced Product Options integration with Breeze Frontend",
-    "type": "magento2-module",
-    "version": "1.3.1",
-    "license": "MIT",
-    "require": {
-        "swissup/module-breeze": "^2.17.1"
-    },
-    "autoload": {
-        "files": [
-            "registration.php"
-        ],
-        "psr-4": {
-            "Swissup\\BreezeMageworxAdvancedproductoptions\\": ""
-        }
+  "name": "swissup/module-breeze-mageworx-advancedproductoptions",
+  "description": "Mageworx Advanced Product Options integration with Breeze Frontend",
+  "type": "magento2-module",
+  "version": "1.4.0",
+  "license": "MIT",
+  "require": {
+    "aqeltech/core": "^1.0",
+    "swissup/breeze-blank": "^2.11",
+    "mageworx/module-advancedproductoptions": "^2.36"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Swissup\\BreezeMageworxAdvancedproductoptions\\": ""
     }
+  }
 }

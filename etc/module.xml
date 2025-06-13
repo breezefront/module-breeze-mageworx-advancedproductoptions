@@ -1,5 +1,14 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Swissup_BreezeMageworxAdvancedproductoptions" />
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="AQELTech_BreezeMageWorxAdvancedProductOptions" setup_version="1.4.0">
+        <sequence>
+            <module name="Swissup_Breeze"/>
+            <module name="MageWorx_OptionBase"/>
+            <module name="MageWorx_DynamicOptionsBase"/>
+            <module name="MageWorx_OptionFeatures"/>
+            <module name="MageWorx_OptionDependency"/>
+            <module name="MageWorx_OptionInventory"/>
+            <module name="MageWorx_OptionSwatches"/>
+        </sequence>
+    </module>
 </config>

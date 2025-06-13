@@ -8,14 +8,49 @@
                     <item name="product" xsi:type="array">
                         <item name="items" xsi:type="array">
                             <item name="dynamicOptions" xsi:type="array">
-                                <item name="path" xsi:type="string">MageWorx_DynamicOptionsBase/js/dynamicOptions</item>
+                                <item name="path" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/dynamicoptionsbase/dynamicoptions-dependencies</item>
                                 <item name="import" xsi:type="array">
-                                    <item name="dynamicOptionsDefaultCalculator" xsi:type="string">
-                                        MageWorx_DynamicOptionsBase/js/calculator/default
-                                    </item>
-                                    <item name="registerAnonymousComponents" xsi:type="string">
-                                        Swissup_BreezeMageworxAdvancedproductoptions/js/dynamicoptionsbase/dynamicoptions-dependencies
-                                    </item>
+                                    <item name="dynamicOptionsDefaultCalculator" xsi:type="string">dynamicOptionsDefaultCalculator</item>
+                                    <item name="price-utils" xsi:type="string">Magento_Catalog/js/price-utils</item>
+                                    <item name="qTip" xsi:type="string">qTip</item>
+                                    <item name="priceBox" xsi:type="string">priceBox</item>
+                                    <item name="parent" xsi:type="string">MageWorx_DynamicOptionsBase/js/dynamicOptions</item>
+                                </item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
+                            <item name="dynamicOptionsDefaultCalculator" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/dynamicoptionsbase/dynamicoptions-register</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">MageWorx_DynamicOptionsBase/js/calculator/default</item>
+                                </item>
+                            </item>
+                            <item name="dynamicOptionMinValueValidationRule" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/dynamicoptionsbase/dynamicoptions-register</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">MageWorx_DynamicOptionsBase/js/validation/dynamicOptionMinValueValidationRule</item>
+                                </item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
+                            <item name="dynamicOptionMaxValueValidationRule" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/dynamicoptionsbase/dynamicoptions-register</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">MageWorx_DynamicOptionsBase/js/validation/dynamicOptionMaxValueValidationRule</item>
+                                </item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
+                            <item name="dynamicOptionStepValidationRule" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/dynamicoptionsbase/dynamicoptions-register</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">MageWorx_DynamicOptionsBase/js/validation/dynamicOptionStepValidationRule</item>
+                                </item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
                                 </item>
                             </item>
                         </item>

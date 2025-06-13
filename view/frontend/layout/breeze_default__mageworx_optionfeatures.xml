@@ -15,6 +15,24 @@
                                     </item>
                                 </item>
                             </item>
+
+                            <item name="qTip" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/features-dependencies</item>
+                                <item name="load" xsi:type="array">
+                                    <item name="autoload" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
+
+                            <item name="selectionLimitValidationRule" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/dynamicoptions-register</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">MageWorx_OptionFeatures/js/selectionLimitValidationRule</item>
+                                </item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
+
                             <item name="optionFeaturesIsDefault" xsi:type="string">
                                 MageWorx_OptionFeatures/js/catalog/product/isDefault
                             </item>

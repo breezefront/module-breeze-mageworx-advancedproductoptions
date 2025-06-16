@@ -32,6 +32,12 @@
                                     </item>
                                 </item>
                             </item>
+                            <item name="selectionLimitValidationRule" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/selectionLimitValidationRule</item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
                         </item>
                     </item>
                 </argument>

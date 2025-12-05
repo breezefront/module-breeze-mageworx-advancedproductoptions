@@ -1,13 +1,107 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="breeze.js">
+            <arguments>
+                <argument name="better_compatibility" xsi:type="array">
+                    <item name="MageWorx_DynamicOptionsBase" xsi:type="boolean">false</item>
+                    <item name="MageWorx_OptionBase" xsi:type="boolean">false</item>
+                    <item name="MageWorx_OptionAdvancedPricing" xsi:type="boolean">false</item>
+                    <item name="MageWorx_OptionDependency" xsi:type="boolean">false</item>
+                    <item name="MageWorx_OptionFeatures" xsi:type="boolean">false</item>
+                    <item name="MageWorx_OptionInventory" xsi:type="boolean">false</item>
+                    <item name="MageWorx_OptionSwatches" xsi:type="boolean">false</item>
+                </argument>
+                <argument name="bundles" xsi:type="array">
+                    <item name="product" xsi:type="array">
+                        <item name="items" xsi:type="array">
+                            <item name="dynamicOptions" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_DynamicOptionsBase/js/dynamicOptions</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="dynamicOptionsDefaultCalculator" xsi:type="string">
+                                        MageWorx_DynamicOptionsBase/js/calculator/default
+                                    </item>
+                                    <item name="registerAnonymousComponents" xsi:type="string">
+                                        Swissup_BreezeMageworxAdvancedproductoptions/js/dynamicoptionsbase/dynamicoptions-dependencies
+                                    </item>
+                                </item>
+                            </item>
+                            <item name="dynamicOptionMinValueValidationRule" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_DynamicOptionsBase/js/validation/dynamicOptionMinValueValidationRule</item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
+                            <item name="dynamicOptionMaxValueValidationRule" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_DynamicOptionsBase/js/validation/dynamicOptionMaxValueValidationRule</item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
+                            <item name="dynamicOptionStepValidationRule" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_DynamicOptionsBase/js/validation/dynamicOptionStepValidationRule</item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
+                            <item name="optionBase" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_OptionBase/js/catalog/product/base</item>
+                            </item>
+                            <item name="optionAdvancedPricing" xsi:type="string">
+                                MageWorx_OptionAdvancedPricing/js/advanced-pricing
+                            </item>
+                            <item name="optionDependency" xsi:type="string">
+                                MageWorx_OptionDependency/js/dependency
+                            </item>
+                            <item name="optionFeatures" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/catalog/product/features</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="dependencies" xsi:type="string">
+                                        Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/features-dependencies
+                                    </item>
+                                </item>
+                            </item>
+                            <item name="optionFeaturesIsDefault" xsi:type="string">
+                                MageWorx_OptionFeatures/js/catalog/product/isDefault
+                            </item>
+                            <item name="optionAdditionalImages" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/swatches/additional</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="mwImageReplacerDeps" xsi:type="string">
+                                        Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-dependencies
+                                    </item>
+                                    <item name="mwImageReplacer" xsi:type="string">
+                                        MageWorx_OptionFeatures/js/swatches/imageReplacer
+                                    </item>
+                                    <item name="mwImageReplacerRegister" xsi:type="string">
+                                        Swissup_BreezeMageworxAdvancedproductoptions/js/optionfeatures/imageReplacer-register
+                                    </item>
+                                </item>
+                            </item>
+                            <item name="selectionLimitValidationRule" xsi:type="array">
+                                <item name="path" xsi:type="string">MageWorx_OptionFeatures/js/selectionLimitValidationRule</item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
+                                </item>
+                            </item>
+                            <item name="optionInventory" xsi:type="string">
+                                MageWorx_OptionInventory/js/catalog/product/inventory
+                            </item>
+                            <item name="optionSwatches" xsi:type="string">
+                                MageWorx_OptionSwatches/js/swatches
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
 
-    <update handle="breeze_default__mageworx_dynamicoptionsbase" />
-    <update handle="breeze_default__mageworx_optionbase" />
-    <update handle="breeze_default__mageworx_optionadvancedpricing" />
-    <update handle="breeze_default__mageworx_optiondependency" />
-    <update handle="breeze_default__mageworx_optionfeatures" />
-    <update handle="breeze_default__mageworx_optioninventory" />
-    <update handle="breeze_default__mageworx_optionswatches" />
-
+        <referenceContainer name="breeze.container">
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_dropdown_html" template="MageWorx_OptionFeatures::option/gallery/dropdown.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_radio_html" template="MageWorx_OptionFeatures::option/gallery/radio.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_checkbox_html" template="MageWorx_OptionFeatures::option/gallery/checkbox.html"/>
+            <block class="Swissup\Breeze\Block\HtmlTemplate" name="breeze.MageWorx_OptionFeatures_template_option_gallery_empty_html" template="MageWorx_OptionFeatures::option/gallery/empty.html"/>
+        </referenceContainer>
+    </body>
 </page>
